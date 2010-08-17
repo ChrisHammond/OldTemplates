@@ -132,7 +132,6 @@
   <ItemGroup>
     <Content Include="Documentation\Documentation.css" />
     <Content Include="Documentation\Documentation.html" />
-    <Content Include="Documentation\logo.gif" />
     <Content Include="Edit.ascx" />
     <Content Include="module.css" />
     <Content Include="Settings.ascx" />

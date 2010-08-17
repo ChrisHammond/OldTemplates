@@ -2,9 +2,9 @@
 	<TemplateData>
 		<DefaultName>ModuleName</DefaultName>
 <!-- change the template name here -->
-		<Name>$YourCompany$ C# Compiled Module</Name>
+		<Name>Christoc.com C# Compiled Module</Name>
 <!-- change the template description here -->
-		<Description>Creates a DNN compiled module for $YourCompany$ Projects.  </Description>
+		<Description>Creates a DNN compiled module for Christoc.com Projects.  </Description>
 		<ProjectType>CSharp</ProjectType>
 		<ProjectSubType></ProjectSubType>
 		<SortOrder>10</SortOrder>
@@ -17,13 +17,13 @@
 	<TemplateContent>
 		<CustomParameters>
 <!-- change the following fields to customize this template to fit your needs -->
-			<CustomParameter Name="$YourCompany$" Value="$YourCompany$" />
+			<CustomParameter Name="$YourCompany$" Value="Christoc.com" />
 <!-- customize the default namespace your projects will use -->
 			<CustomParameter Name="$NameSpace$" Value="com.christoc.dnn." />
 <!-- this URL will be used in a variety of places, including the default manifest file for your module -->
-			<CustomParameter Name="$YourWebsite$" Value="http://www.$YourCompany$" />
+			<CustomParameter Name="$YourWebsite$" Value="http://www.Christoc.com" />
 <!-- this email address will be used as the support email for your DNN manifest file -->
-			<CustomParameter Name="$YourEmail$" Value="modules@$YourCompany$" />
+			<CustomParameter Name="$YourEmail$" Value="modules@Christoc.com" />
 		</CustomParameters>
 		<Project TargetFileName="$safeprojectname$.csproj" File="ModuleName.csproj" ReplaceParameters="true">
 			<Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
