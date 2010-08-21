@@ -1,1 +1,1 @@
-<%@ Control language="C#" Inherits="$NameSpace$$safeprojectname$.Edit$safeprojectname$" AutoEventWireup="false"  Codebehind="Edit$safeprojectname$.ascx.cs" %>
+<%@ Control language="C#" Inherits="$NameSpace$$safeprojectname$.Edit" AutoEventWireup="false"  Codebehind="Edit.ascx.cs" %>
