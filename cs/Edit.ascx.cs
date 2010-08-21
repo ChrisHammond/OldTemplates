@@ -21,7 +21,7 @@ namespace $NameSpace$$safeprojectname$
 	/// The Edit$safeprojectname$ class is used to manage content
 	/// </summary>
 	/// -----------------------------------------------------------------------------
-	public partial class Edit$safeprojectname$ : $safeprojectname$ModuleBase
+	public partial class Edit : $safeprojectname$ModuleBase
 	{
 
 	#region Event Handlers
