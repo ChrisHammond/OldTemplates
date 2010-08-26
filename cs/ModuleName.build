@@ -172,11 +172,12 @@
       </fileset>
     </copy>
 
-    <copy todir="temp/bin" flatten="false">
-      <fileset>
-        <include name="${module.dll}" />
-      </fileset>
-    </copy>
+	<copy todir="temp/bin" flatten="true">
+		<fileset>
+			<include name="${module.dll}" />
+			<include name="**/*.dll" />
+		</fileset>
+	</copy>
 
     <copy todir="temp" flatten="true">
       <fileset>
