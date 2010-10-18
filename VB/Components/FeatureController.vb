@@ -49,7 +49,7 @@ Namespace $NameSpace$$safeprojectname$
         '/// <param name="Version">The current version of the module</param>
         '/// -----------------------------------------------------------------------------
         Public Function UpgradeModule(ByVal Version As String) As String Implements DotNetNuke.Entities.Modules.IUpgradeable.UpgradeModule
-
+            Throw New NotImplementedException()
         End Function
 
         '/// -----------------------------------------------------------------------------
