@@ -13,7 +13,7 @@
 
 Imports DotNetNuke
 
-Namespace $NameSpace$$safeprojectname$
+Namespace Data
 
     ''' -----------------------------------------------------------------------------
     ''' <summary>
@@ -38,7 +38,7 @@ Namespace $NameSpace$$safeprojectname$
 
         ' dynamically create provider
         Private Shared Sub CreateProvider()
-            objProvider = CType(Framework.Reflection.CreateObject("data", "$NameSpace$$safeprojectname$", ""), DataProvider)
+            objProvider = CType(Framework.Reflection.CreateObject("data", "$NameSpace$$safeprojectname$.Data", ""), DataProvider)
         End Sub
 
         ' return the provider

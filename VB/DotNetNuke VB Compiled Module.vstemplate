@@ -1,7 +1,7 @@
 <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
 	<TemplateData>
 <!-- change the template name here -->
-		<Name>Christoc.com VB Compiled Module</Name>
+		<Name>DotNetNuke VB Compiled Module</Name>
 <!-- change the template description here -->
 		<Description>Creates a DNN compiled module for Christoc.com Projects.  </Description>
 		<ProjectType>VisualBasic</ProjectType>
@@ -17,13 +17,13 @@
 	<TemplateContent>
 		<CustomParameters>
 <!-- change the following fields to customize this template to fit your needs -->
-			<CustomParameter Name="$YourCompany$" Value="Christoc.com" />
+			<CustomParameter Name="$YourCompany$" Value="DotNetNuke Corporation" />
 <!-- customize the default namespace your projects will use -->
-			<CustomParameter Name="$NameSpace$" Value="com.christoc.dnn." />
+			<CustomParameter Name="$NameSpace$" Value="DotNetNuke.Modules." />
 <!-- this URL will be used in a variety of places, including the default manifest file for your module -->
-			<CustomParameter Name="$YourWebsite$" Value="http://www.christoc.com" />
+			<CustomParameter Name="$YourWebsite$" Value="http://www.dotnetnuke.com" />
 <!-- this email address will be used as the support email for your DNN manifest file -->
-			<CustomParameter Name="$YourEmail$" Value="modules@christoc.com" />
+			<CustomParameter Name="$YourEmail$" Value="training@dotnetnuke.com" />
 		</CustomParameters>
 		<Project TargetFileName="$safeprojectname$.vbproj" File="ModuleName.vbproj" ReplaceParameters="true">
 			<Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
