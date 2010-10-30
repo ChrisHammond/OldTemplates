@@ -17,7 +17,7 @@ Namespace Components
     Public Class FeatureController
         Implements IPortable
         Implements ISearchable
-        Implements IUpgradeable
+        'Implements IUpgradeable
 
         '/// -----------------------------------------------------------------------------
         '/// <summary>
@@ -48,9 +48,9 @@ Namespace Components
         '/// </summary>
         '/// <param name="Version">The current version of the module</param>
         '/// -----------------------------------------------------------------------------
-        Public Function UpgradeModule(ByVal Version As String) As String Implements DotNetNuke.Entities.Modules.IUpgradeable.UpgradeModule
-            Throw New NotImplementedException()
-        End Function
+        'Public Function UpgradeModule(ByVal Version As String) As String Implements DotNetNuke.Entities.Modules.IUpgradeable.UpgradeModule
+        '    Throw New NotImplementedException()
+        'End Function
 
         '/// -----------------------------------------------------------------------------
         '/// <summary>
