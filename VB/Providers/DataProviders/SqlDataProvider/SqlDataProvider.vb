@@ -15,7 +15,7 @@ Imports Microsoft.ApplicationBlocks.Data
 Imports DotNetNuke.Common.Utilities
 Imports DotNetNuke.Framework.Providers
 
-Namespace $NameSpace$$safeprojectname$
+Namespace Data
 
     ''' -----------------------------------------------------------------------------
     ''' <summary>
@@ -102,6 +102,12 @@ Namespace $NameSpace$$safeprojectname$
             End Get
         End Property
 
+        Private ReadOnly Property NamePrefix() As String
+            Get
+                Return DatabaseOwner + ObjectQualifier + ModuleQualifier
+            End Get
+        End Property
+
 #End Region
 
 #Region "Private Methods"
@@ -119,11 +125,11 @@ Namespace $NameSpace$$safeprojectname$
 #Region "Public Methods"
 
         'Public Overrides Function GetItems(ByVal ModuleId As Integer) As IDataReader
-        '    Return CType(SqlHelper.ExecuteReader(ConnectionString, GetFullyQualifiedName("GetItems"), ModuleId), IDataReader)
+        '    Return CType(SqlHelper.ExecuteReader(ConnectionString, NamePrefix + "GetItems", ModuleId), IDataReader)
         'End Function
 
         'Public Overrides Function GetItem(ByVal ItemId As Integer) As IDataReader
-        '    Return CType(SqlHelper.ExecuteReader(ConnectionString, GetFullyQualifiedName("GetItem"),ItemId), IDataReader)
+        '    Return CType(SqlHelper.ExecuteReader(ConnectionString, NamePrefix + "GetItem",ItemId), IDataReader)
         'End Function
 #End Region
 

@@ -11,7 +11,7 @@
 Imports DotNetNuke.Entities.Modules
 Imports DotNetNuke.Services.Search
 
-Namespace $NameSpace$$safeprojectname$
+Namespace Components
 
 
     Public Class FeatureController
