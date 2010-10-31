@@ -28,7 +28,7 @@ namespace $NameSpace$$safeprojectname$.Data
 	#region Private Members
 
         private const string ProviderType = "data";
-        private const string ModuleQualifier = "$YourCompany$$safeprojectname$_";
+        private const string ModuleQualifier = "$safeprojectname$_";
 
         private readonly ProviderConfiguration _providerConfiguration = ProviderConfiguration.GetProviderConfiguration(ProviderType);
         private readonly string _connectionString;
