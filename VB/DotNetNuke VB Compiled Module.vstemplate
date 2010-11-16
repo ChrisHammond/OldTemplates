@@ -3,10 +3,9 @@
 <!-- change the template name here -->
 		<Name>DotNetNuke VB Compiled Module</Name>
 <!-- change the template description here -->
-		<Description>Creates a DNN compiled module for Christoc.com Projects.  </Description>
+		<Description>Creates a DNN compiled module for DotNetNuke Module Projects.  </Description>
 		<ProjectType>VisualBasic</ProjectType>
-		<ProjectSubType>
-		</ProjectSubType>
+		<ProjectSubType></ProjectSubType>
 		<SortOrder>10</SortOrder>
 		<CreateNewFolder>true</CreateNewFolder>
 		<ProvideDefaultName>true</ProvideDefaultName>
@@ -32,6 +31,12 @@
 				<ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.resx">View.ascx.resx</ProjectItem>
 			</Folder>
 			<ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+
+			<Folder Name="BuildScripts" TargetFolderName="BuildScripts">
+				<ProjectItem ReplaceParameters="false" TargetFileName="ModulePackage.targets">ModulePackage.targets</ProjectItem>
+				<ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.Targets">MSBuild.Community.Tasks.Targets</ProjectItem>
+			</Folder>
+
 			<Folder Name="Components" TargetFolderName="Components">
 				<ProjectItem ReplaceParameters="true" TargetFileName="FeatureController.vb">FeatureController.vb</ProjectItem>
 			</Folder>
@@ -59,7 +64,6 @@
 			<ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx">Settings.ascx</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.designer.vb">Settings.ascx.designer.vb</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.vb">Settings.ascx.vb</ProjectItem>
-			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.build">ModuleName.build</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">ModuleName.dnn</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ModuleBase.vb">ModuleBase.vb</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$SettingsBase.vb">SettingsBase.vb</ProjectItem>
