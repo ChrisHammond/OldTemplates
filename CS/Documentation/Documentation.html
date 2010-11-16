@@ -3,13 +3,19 @@
 <head>
     <title>$YourCompany$ Template</title>
     <link rel="stylesheet" type="text/css" href="Documentation.css" />
+    <style type="text/css">
+        .style1
+        {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 	<div>
     <h1>$YourCompany$ $safeprojectname$ Module</h1>
     <hr />
     <h2>* Important *</h2>
-    <p>When creating a project using this template, name your project simply "ModuleName", not "$YourCompany$ModuleName".</p>
+    <p>When creating a project using this template, you should have named your project simply "ModuleName", not "$YourCompany$ModuleName".</p>
 	<p>Due to limitations in the templating capabilities of Visual Studio, you will need to make some minor changes before you package this module.</p>
     <ul>
 		<li><strong style="font-weight: bold; font-style: none">BEFORE</strong> checking the module into your source control environment check the following.</li>
@@ -26,10 +32,22 @@
 				<li>Under 'Servers', make sure to "Use IIS Web Server" with a project url of http://dnndev/desktopmodules/$safeprojectname$ and an Override application root URL of http://dnndev/</li>
 			</ul>
 		</li>
-		<li>
-		    After you have completed the above steps you can delete the Documentation directory from your project.
-		</li>
 	</ul>
+        <h2>Steps after your project is setup.</h2>
+        <p>
+            <b>If you don&#39;t have the Community MSBuildTasks installed on your computer 
+            </b> <a target="_blank" 
+                href="http://msbuildtasks.tigris.org/files/documents/3383/28296/MSBuild.Community.Tasks.msi" 
+                class="style1">download 
+            and run this file</a><b> prior to trying to build.
+        </b></p>
+        <p>
+                        To Build and Package your Module you need to change to Release mode and then 
+            simply choose Build from the Build menu. The MSBuild scripts will do the 
+            packaging process for you.</p>
+        <p>
+            After you are finished with the Documentation you can delete the Documentation directory from your project.             
+        </p>
 	<hr />
 	<br />
 	</div>

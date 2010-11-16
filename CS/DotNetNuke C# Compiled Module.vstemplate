@@ -1,10 +1,9 @@
 <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
 	<TemplateData>
-		<DefaultName>ModuleName</DefaultName>
 <!-- change the template name here -->
 		<Name>DotNetNuke C# Compiled Module</Name>
 <!-- change the template description here -->
-		<Description>Creates a DNN compiled module for DotNetNuke Projects.  </Description>
+		<Description>Creates a DNN compiled module for DotNetNuke Module Projects.  </Description>
 		<ProjectType>CSharp</ProjectType>
 		<ProjectSubType></ProjectSubType>
 		<SortOrder>10</SortOrder>
@@ -34,6 +33,10 @@
 			</Folder>
 
 			<Folder Name="bin" TargetFolderName="bin">
+			</Folder>
+			<Folder Name="BuildScripts" TargetFolderName="BuildScripts">
+				<ProjectItem ReplaceParameters="false" TargetFileName="ModulePackage.targets">ModulePackage.targets</ProjectItem>
+				<ProjectItem ReplaceParameters="false" TargetFileName="MSBuild.Community.Tasks.Targets">MSBuild.Community.Tasks.Targets</ProjectItem>
 			</Folder>
 
 			<Folder Name="Components" TargetFolderName="Components">
@@ -69,8 +72,6 @@
 			<ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.cs">Edit.ascx.cs</ProjectItem>
 
 			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">ModuleName.dnn</ProjectItem>
-
-			<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.build">ModuleName.build</ProjectItem>
 
 			<ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx">Settings.ascx</ProjectItem>
 			<ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.designer.cs">Settings.ascx.designer.cs</ProjectItem>
