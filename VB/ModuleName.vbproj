@@ -142,6 +142,8 @@
     <Content Include="module.css" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
+    <Content Include="ReleaseNotes.txt" />
+    <Content Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />
