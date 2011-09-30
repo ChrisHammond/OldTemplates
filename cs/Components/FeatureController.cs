@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2010 $YourCompany$
+' Copyright (c) $CopyrightYear$ $YourCompany$
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -23,14 +23,11 @@ namespace $NameSpace$$safeprojectname$.Components
 	/// The Controller class for $safeprojectname$
 	/// </summary>
 	/// -----------------------------------------------------------------------------
-	public class FeatureController : IPortable, ISearchable, IUpgradeable
+    
+	//uncomment the interfaces to add the support.
+    public class FeatureController //: IPortable, ISearchable, IUpgradeable
 	{
 
-	#region Public Methods
-
-	
-
-	#endregion
 	
 	#region Optional Interfaces
 

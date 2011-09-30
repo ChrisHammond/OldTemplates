@@ -15,8 +15,8 @@ Namespace Components
 
 
     Public Class FeatureController
-        Implements IPortable
-        Implements ISearchable
+        'Implements IPortable
+        'Implements ISearchable
         'Implements IUpgradeable
 
         '/// -----------------------------------------------------------------------------
@@ -25,9 +25,9 @@ Namespace Components
         '/// </summary>
         '/// <param name="ModuleID">The Id of the module to be exported</param>
         '/// -----------------------------------------------------------------------------
-        Public Function ExportModule(ByVal ModuleID As Integer) As String Implements IPortable.ExportModule
-            Throw New NotImplementedException()
-        End Function
+        'Public Function ExportModule(ByVal ModuleID As Integer) As String Implements IPortable.ExportModule
+        'Throw New NotImplementedException()
+        'End Function
 
         '/// -----------------------------------------------------------------------------
         '/// <summary>
@@ -38,9 +38,9 @@ Namespace Components
         '/// <param name="Version">The version of the module to be imported</param>
         '/// <param name="UserId">The Id of the user performing the import</param>
         '/// -----------------------------------------------------------------------------
-        Public Sub ImportModule(ByVal ModuleID As Integer, ByVal Content As String, ByVal Version As String, ByVal UserID As Integer) Implements IPortable.ImportModule
-            Throw New NotImplementedException()
-        End Sub
+        'Public Sub ImportModule(ByVal ModuleID As Integer, ByVal Content As String, ByVal Version As String, ByVal UserID As Integer) Implements IPortable.ImportModule
+        '   Throw New NotImplementedException()
+        'End Sub
 
         '/// -----------------------------------------------------------------------------
         '/// <summary>
@@ -58,9 +58,9 @@ Namespace Components
         '/// </summary>
         '/// <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
         '/// -----------------------------------------------------------------------------
-        Public Function GetSearchItems(ByVal ModInfo As ModuleInfo) As SearchItemInfoCollection Implements ISearchable.GetSearchItems
-            Throw New NotImplementedException()
-        End Function
+        'Public Function GetSearchItems(ByVal ModInfo As ModuleInfo) As SearchItemInfoCollection Implements ISearchable.GetSearchItems
+        '   Throw New NotImplementedException()
+        'End Function
     End Class
 
 End Namespace
