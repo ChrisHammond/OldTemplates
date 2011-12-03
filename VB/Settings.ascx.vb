@@ -1,4 +1,4 @@
-' Copyright (c) 2010 $YourCompany$
+' Copyright (c) $CopyrightYear$ $YourCompany$
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -39,7 +39,16 @@ Imports DotNetNuke.Services.Exceptions
         Public Overrides Sub LoadSettings()
             Try
                 If (Page.IsPostBack = False) Then
-                 
+
+
+					'uncomment to load saved settings in the text boxes
+					'if(Settings.Contains("Setting1"))
+					'	txtSetting1.Text = Settings("Setting1").ToString()
+			
+					'if (Settings.Contains("Setting2"))
+					'	txtSetting2.Text = Settings("Setting2")
+
+					                 
                 End If
             Catch exc As Exception           'Module failed to load
                 ProcessModuleLoadException(Me, exc)
@@ -58,8 +67,13 @@ Imports DotNetNuke.Services.Exceptions
         Public Overrides Sub UpdateSettings()
             Try
                 Dim objModules As New Entities.Modules.ModuleController
+		'the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
+                'objModules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text)
+                'objModules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text)
+
 
                 'objModules.UpdateTabModuleSetting(TabModuleId, "SETTINGNAME", VALUE.Text)
+                'objModules.UpdateModuleSetting(ModuleId, "SETTINGNAME", VALUE.Text)
 
             Catch exc As Exception           'Module failed to load
                 ProcessModuleLoadException(Me, exc)

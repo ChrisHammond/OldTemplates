@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2010 $YourCompany$
+' Copyright (c) $CopyrightYear$ $YourCompany$
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
