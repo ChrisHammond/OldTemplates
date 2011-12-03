@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2010 $YourCompany$
+' Copyright (c) $CopyrightYear$ $YourCompany$
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("2010 $YourCompany$")]
+[assembly: AssemblyCopyright("$CopyrightYear$ $YourCompany$")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

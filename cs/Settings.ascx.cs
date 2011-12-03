@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2010  $YourCompany$
+' Copyright (c) $CopyrightYear$  $YourCompany$
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -39,8 +39,20 @@ namespace $NameSpace$$safeprojectname$
 			{
 				if (Page.IsPostBack == false)
 				{
-                    //Check for existing settings and use those on this page
-                    //Settings["SettingName"]
+					//Check for existing settings and use those on this page
+					//Settings["SettingName"]
+
+					/* uncomment to load saved settings in the text boxes
+					if(Settings.Contains("Setting1"))
+						txtSetting1.Text = Settings["Setting1"].ToString();
+			
+					if (Settings.Contains("Setting2"))
+						txtSetting2.Text = Settings["Setting2"].ToString();
+
+					*/
+
+
+
 				}
 			}
 			catch (Exception exc) //Module failed to load
@@ -58,9 +70,14 @@ namespace $NameSpace$$safeprojectname$
 		{
 			try
 			{
-                ModuleController modules = new ModuleController();
-                //modules.UpdateTabModuleSetting(this.TabModuleId, "ModuleSetting", (control.value ? "true" : "false"));
-                //modules.UpdateModuleSetting(this.TabModuleId, "LogBreadCrumb", (control.value ? "true" : "false"));
+        		        ModuleController modules = new ModuleController();
+
+				//the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
+				//modules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text);
+				//modules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text);
+
+		                //modules.UpdateTabModuleSetting(this.TabModuleId, "ModuleSetting", (control.value ? "true" : "false"));
+		                //modules.UpdateModuleSetting(this.ModuleId, "LogBreadCrumb", (control.value ? "true" : "false"));
 			}
 			catch (Exception exc) //Module failed to load
 			{
