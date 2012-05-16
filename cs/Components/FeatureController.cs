@@ -21,6 +21,18 @@ namespace $NameSpace$$safeprojectname$.Components
 	/// -----------------------------------------------------------------------------
 	/// <summary>
 	/// The Controller class for $safeprojectname$
+    /// 
+    /// The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+    /// DotNetNuke will poll this class to find out which Interfaces the class implements. 
+    /// 
+    /// The IPortable interface is used to import/export content from a DNN module
+    /// 
+    /// The ISearchable interface is used by DNN to index the content of a module
+    /// 
+    /// The IUpgradeable interface allows module developers to execute code during the upgrade 
+    /// process for a module.
+    /// 
+    /// Below you will find stubbed out implementations of each, uncomment and populate with your own data
 	/// </summary>
 	/// -----------------------------------------------------------------------------
     
@@ -37,8 +49,8 @@ namespace $NameSpace$$safeprojectname$.Components
 		/// </summary>
 		/// <param name="ModuleID">The Id of the module to be exported</param>
 		/// -----------------------------------------------------------------------------
-		public string ExportModule(int ModuleID)
-		{
+		//public string ExportModule(int ModuleID)
+		//{
 			//string strXML = "";
 
 			//List<$safeprojectname$Info> col$safeprojectname$s = Get$safeprojectname$s(ModuleID);
@@ -57,8 +69,8 @@ namespace $NameSpace$$safeprojectname$.Components
 
 			//return strXML;
 
-			throw new System.NotImplementedException("The method or operation is not implemented.");
-		}
+		//	throw new System.NotImplementedException("The method or operation is not implemented.");
+		//}
 
 		/// -----------------------------------------------------------------------------
 		/// <summary>
@@ -69,8 +81,8 @@ namespace $NameSpace$$safeprojectname$.Components
 		/// <param name="Version">The version of the module to be imported</param>
 		/// <param name="UserId">The Id of the user performing the import</param>
 		/// -----------------------------------------------------------------------------
-		public void ImportModule(int ModuleID, string Content, string Version, int UserID)
-		{
+		//public void ImportModule(int ModuleID, string Content, string Version, int UserID)
+		//{
 			//XmlNode xml$safeprojectname$s = DotNetNuke.Common.Globals.GetContent(Content, "$safeprojectname$s");
 			//foreach (XmlNode xml$safeprojectname$ in xml$safeprojectname$s.SelectNodes("$safeprojectname$"))
 			//{
@@ -81,8 +93,8 @@ namespace $NameSpace$$safeprojectname$.Components
 			//    Add$safeprojectname$(obj$safeprojectname$);
 			//}
 
-			throw new System.NotImplementedException("The method or operation is not implemented.");
-		}
+		//	throw new System.NotImplementedException("The method or operation is not implemented.");
+		//}
 
 		/// -----------------------------------------------------------------------------
 		/// <summary>
@@ -90,8 +102,8 @@ namespace $NameSpace$$safeprojectname$.Components
 		/// </summary>
 		/// <param name="ModInfo">The ModuleInfo for the module to be Indexed</param>
 		/// -----------------------------------------------------------------------------
-		public DotNetNuke.Services.Search.SearchItemInfoCollection GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo ModInfo)
-		{
+		//public DotNetNuke.Services.Search.SearchItemInfoCollection GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo ModInfo)
+		//{
 			//SearchItemInfoCollection SearchItemCollection = new SearchItemInfoCollection();
 
 			//List<$safeprojectname$Info> col$safeprojectname$s = Get$safeprojectname$s(ModInfo.ModuleID);
@@ -104,8 +116,8 @@ namespace $NameSpace$$safeprojectname$.Components
 
 			//return SearchItemCollection;
 
-			throw new System.NotImplementedException("The method or operation is not implemented.");
-		}
+		//	throw new System.NotImplementedException("The method or operation is not implemented.");
+		//}
 
 		/// -----------------------------------------------------------------------------
 		/// <summary>
@@ -113,10 +125,10 @@ namespace $NameSpace$$safeprojectname$.Components
 		/// </summary>
 		/// <param name="Version">The current version of the module</param>
 		/// -----------------------------------------------------------------------------
-		public string UpgradeModule(string Version)
-		{
-			throw new System.NotImplementedException("The method or operation is not implemented.");
-		}
+		//public string UpgradeModule(string Version)
+		//{
+		//	throw new System.NotImplementedException("The method or operation is not implemented.");
+		//}
 
 	#endregion
 

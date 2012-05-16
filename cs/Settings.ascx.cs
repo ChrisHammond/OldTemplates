@@ -21,6 +21,21 @@ namespace $NameSpace$$safeprojectname$
 	/// -----------------------------------------------------------------------------
 	/// <summary>
 	/// The Settings class manages Module Settings
+    /// 
+    /// Typically your settings control would be used to manage settings for your module.
+    /// There are two types of settings, ModuleSettings, and TabModuleSettings.
+    /// 
+    /// ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+    /// 
+    /// TabModuleSettings apply only to the current module on the current page, if you copy that module to
+    /// another page the settings are not transferred.
+    /// 
+    /// If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+    /// 
+    /// Below we have some examples of how to access these settings but you will need to uncomment to use.
+    /// 
+    /// Because the control inherits from $safeprojectname$SettingsBase you have access to any custom properties
+    /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
 	/// </summary>
 	/// -----------------------------------------------------------------------------
 	public partial class Settings : $safeprojectname$SettingsBase
@@ -70,14 +85,16 @@ namespace $NameSpace$$safeprojectname$
 		{
 			try
 			{
-        		        ModuleController modules = new ModuleController();
+                ModuleController modules = new ModuleController();
 
 				//the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
+                //module settings
 				//modules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text);
 				//modules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text);
 
-		                //modules.UpdateTabModuleSetting(this.TabModuleId, "ModuleSetting", (control.value ? "true" : "false"));
-		                //modules.UpdateModuleSetting(this.ModuleId, "LogBreadCrumb", (control.value ? "true" : "false"));
+                //tab module settings
+		        //modules.UpdateTabModuleSetting(TabModuleId, "Setting1",  txtSetting1.Text);
+		        //modules.UpdateTabModuleSetting(TabModuleId, "Setting2",  txtSetting2.Text);
 			}
 			catch (Exception exc) //Module failed to load
 			{

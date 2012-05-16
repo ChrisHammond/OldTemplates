@@ -13,6 +13,23 @@ Imports DotNetNuke.Services.Search
 
 Namespace Components
 
+    ''' <summary>
+    ''' The Controller class for $safeprojectname$
+    ''' 
+    ''' The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+    ''' DotNetNuke will poll this class to find out which Interfaces the class implements. 
+    ''' 
+    ''' The IPortable interface is used to import/export content from a DNN module
+    ''' 
+    ''' The ISearchable interface is used by DNN to index the content of a module
+    ''' 
+    ''' The IUpgradeable interface allows module developers to execute code during the upgrade 
+    ''' process for a module.
+    ''' 
+    ''' Below you will find stubbed out implementations of each, uncomment and populate with your own data
+    ''' </summary>
+
+
 
     Public Class FeatureController
         'Implements IPortable

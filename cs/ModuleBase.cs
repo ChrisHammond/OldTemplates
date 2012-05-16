@@ -13,12 +13,16 @@
 namespace $NameSpace$$safeprojectname$
 {
 
+    /// <summary>
+    /// This base class can be used to define custom properties for multiple controls. 
+    /// An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+    /// 
+    /// Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+    /// are accessible to your module's controls (that inherity from $safeprojectname$ModuleBase
+    /// 
+    /// </summary>
+
     public class $safeprojectname$ModuleBase : DotNetNuke.Entities.Modules.PortalModuleBase
     {
-        //with this base class you can provide any custom properties and methods that all your controls can access here, you can also access all the DNN 
-        // methods and properties available off of portalmodulebase such as TabId, UserId, UserInfo, etc.
-	
-
     }
-
 }

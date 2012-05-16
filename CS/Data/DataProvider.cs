@@ -22,6 +22,9 @@ namespace $NameSpace$$safeprojectname$.Data
 	/// -----------------------------------------------------------------------------
 	/// <summary>
 	/// An abstract class for the data access layer
+    /// 
+    /// The abstract data provider provides the methods that a control data provider (sqldataprovider)
+    /// must implement. You'll find two commented out examples in the Abstract methods region below.
 	/// </summary>
 	/// -----------------------------------------------------------------------------
 	public abstract class DataProvider
