@@ -20,6 +20,11 @@ Namespace Data
     ''' -----------------------------------------------------------------------------
     ''' <summary>
     ''' SQL Server implementation of the abstract DataProvider class
+    ''' 
+    ''' This concreted data provider class provides the implementation of the abstract methods 
+    ''' from data dataprovider.cs
+    ''' 
+    ''' In most cases you will only modify the Public methods region below.
     ''' </summary>
     ''' <remarks>
     ''' </remarks>

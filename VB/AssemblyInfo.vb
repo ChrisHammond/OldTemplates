@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 <Assembly: AssemblyTitle("$YourCompany$")> 
-<Assembly: AssemblyDescription("A DotNetNuke Module from $YourCompany$ Software")> 
+<Assembly: AssemblyDescription("A DotNetNuke Module from $YourCompany$")> 
 <Assembly: AssemblyConfiguration("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("")> 
-<Assembly: AssemblyCopyright("$Year$ $YourCompany$")> 
+<Assembly: AssemblyCopyright("$CopyrightYear$ $YourCompany$")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

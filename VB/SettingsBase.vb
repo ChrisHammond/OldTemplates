@@ -10,6 +10,14 @@
 
 Imports DotNetNuke.Entities.Modules
 
+''' <summary>
+''' This base class can be used to define custom properties for multiple controls. 
+''' An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+''' 
+''' Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+''' are accessible to your module's controls (that inherity from $safeprojectname$SettingsBase
+''' 
+''' </summary>
 
     Public Class $safeprojectname$SettingsBase
         Inherits ModuleSettingsBase

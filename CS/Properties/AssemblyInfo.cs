@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 //
 [assembly: AssemblyTitle("$YourCompany$$safeprojectname$")]
-[assembly: AssemblyDescription("A DotNetNuke Module from $YourCompany$ Software")]
+[assembly: AssemblyDescription("A DotNetNuke Module from $YourCompany$")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
