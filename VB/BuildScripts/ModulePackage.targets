@@ -39,6 +39,7 @@
       <InstallInclude Include="**\*.resx" />
       <InstallInclude Include="**\*.aspx" />
       <InstallInclude Include="**\*.js" />
+      <InstallInclude Include="**\*.dnn" />
       <InstallInclude Include="**\*.txt"  Exclude="**\obj\**;**\_ReSharper*\**;" />
       <InstallInclude Include="**\images\*.*" />
     </ItemGroup>
@@ -54,6 +55,7 @@
       <SourceInclude Include="**\*.xml" Exclude="**\obj\**;**\_ReSharper*\**;" />
       <SourceInclude Include="**\*.aspx" />
       <SourceInclude Include="**\*.js" />
+      <SourceInclude Include="**\*.dnn" />
       <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;" />
       <SourceInclude Include="**\images\*.*" />
       <SourceInclude Include="**\*.vb" />
