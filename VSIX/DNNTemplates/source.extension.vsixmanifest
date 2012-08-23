@@ -20,6 +20,7 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates\CSharp\Web\DNN" d:TargetPath="ProjectTemplates\DotNetNuke 6 C Compiled Module.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates\VisualBasic\Web\DNN" d:TargetPath="ProjectTemplates\DotNetNuke 6 VB Compiled Module.zip" />
     <!--
     <CustomExtension Type="Company.Product.Type">Path\File.ext</CustomExtension>
     -->

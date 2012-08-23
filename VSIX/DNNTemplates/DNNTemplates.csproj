@@ -150,6 +150,7 @@
     <Content Include="packages\MSBuildTasks.1.4.0.45.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="ProjectTemplates\VisualBasic\Web\DNN\DotNetNuke 6 VB Compiled Module.zip" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
