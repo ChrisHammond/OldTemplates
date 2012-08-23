@@ -42,6 +42,7 @@
       <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;" />
       <SourceInclude Include="**\images\*.*" />
       <SourceInclude Include="**\*.cs" />
+	  <SourceInclude Include="**\Packages\**" />
       <SourceInclude Include="**\*.cs.designer" />
       <SourceInclude Include="**\*.csproj" />
       <SourceInclude Include="**\*.targets" />

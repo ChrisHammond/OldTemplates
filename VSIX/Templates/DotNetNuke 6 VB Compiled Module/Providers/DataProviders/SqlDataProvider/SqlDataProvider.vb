@@ -118,7 +118,7 @@ Namespace Data
 #Region "Private Methods"
 
         Private Function GetNull(ByVal Field As Object) As Object
-            Return Common.Utilities.Null.GetNull(Field, DBNull.Value)
+            Return DotNetNuke.Common.Utilities.Null.GetNull(Field, DBNull.Value)
         End Function
 
 #End Region

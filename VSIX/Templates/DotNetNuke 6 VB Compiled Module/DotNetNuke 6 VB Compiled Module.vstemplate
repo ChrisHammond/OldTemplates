@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>DotNetNuke 6 VB.net Compiled Module</Name>
+    <Name>DotNetNuke 6 VB.Net Compiled Module</Name>
     <Description>A Visual Studio template for DotNetNuke 6 Module Development, designed for Visual Studio 2012</Description>
     <ProjectType>VisualBasic</ProjectType>
     <ProjectSubType>
@@ -14,15 +14,15 @@
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
-  <TemplateContent
+  <TemplateContent>
   <CustomParameters>
-   <CustomParameter Name="$rootnamespace$" Value="DotNetNuke.Modules."/>
-   <CustomParameter Name="$ownername$" Value="DotNetNuke Corporation"/>
+    <CustomParameter Name="$rootnamespace$" Value="DotNetNuke.Modules."/>
+    <CustomParameter Name="$ownername$" Value="DotNetNuke Corporation"/>
     <CustomParameter Name="$owneremail$" Value="training@dnncorp.com"/>
     <CustomParameter Name="$ownerwebsite$" Value="http://www.dotnetnuke.com"/>
     <CustomParameter Name="$devenvironmenturl$" Value="dnndev" />
- </CustomParameters>
-    <Project TargetFileName="$safeprojectname$.vbproj" File="$safeprojectname$.vbproj" ReplaceParameters="true">
+  </CustomParameters>
+    <Project TargetFileName="$safeprojectname$.vbproj" File="vbtemplate.vbproj" ReplaceParameters="true">
       <Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
         <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.resx">Edit.ascx.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.resx">Settings.ascx.resx</ProjectItem>
@@ -30,7 +30,7 @@
       </Folder>
       <Folder Name="BuildScripts" TargetFolderName="BuildScripts">
         <ProjectItem ReplaceParameters="true" TargetFileName="ModulePackage.targets">ModulePackage.targets</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="MSBuild.Community.Tasks.targets">MSBuild.Community.Tasks.targets</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MSBuild.Community.Tasks.Targets">MSBuild.Community.Tasks.Targets</ProjectItem>
       </Folder>
       <Folder Name="Components" TargetFolderName="Components">
         <ProjectItem ReplaceParameters="true" TargetFileName="FeatureController.vb">FeatureController.vb</ProjectItem>
@@ -50,7 +50,6 @@
       <Folder Name="My Project" TargetFolderName="My Project">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Providers" TargetFolderName="Providers">
         <Folder Name="DataProviders" TargetFolderName="DataProviders">
           <Folder Name="SqlDataProvider" TargetFolderName="SqlDataProvider">
@@ -64,23 +63,22 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx">Settings.ascx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.designer.vb">Settings.ascx.designer.vb</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.vb">Settings.ascx.vb</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">$safeprojectname$.dnn</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ModuleBase.vb">$safeprojectname$ModuleBase.vb</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$SettingsBase.vb">$safeprojectname$SettingsBase.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">vbtemplate.dnn</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ModuleBase.vb">VBTemplateModuleBase.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$SettingsBase.vb">VBTemplateSettingsBase.vb</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx">View.ascx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.designer.vb">View.ascx.designer.vb</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="View.ascx.vb">View.ascx.vb</ProjectItem>
     </Project>
   </TemplateContent>
-<WizardExtension>
-   <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-   <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
- </WizardExtension>
- <WizardData>
-   <packages repository="extension"
-         repositoryId="e48e838a-c708-4d43-b822-4d5de0d13eed">
-     <package id="MSBuildTasks" version="1.4.0.45" />
-   </packages>
- </WizardData>
-  
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension"
+          repositoryId="e48e838a-c708-4d43-b822-4d5de0d13eed">
+      <package id="MSBuildTasks" version="1.4.0.45" />
+    </packages>
+  </WizardData>
 </VSTemplate>
