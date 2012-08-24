@@ -1,0 +1,5 @@
+DotNetNuke Visual Studio Gallery Tempaltes
+
+V1.0.0 - Release Date 8/24/2012
+
+Description: Initial Visual Studio Gallery installer for DotNetNuke, includes both a C# and VB.NET project template for Visual Studio 2012 and DotNetNuke 6. Configured for DotNetNuke 6.2.2 but should work with all versions of DNN 6.0+
