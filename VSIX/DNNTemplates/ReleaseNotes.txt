@@ -1,5 +1,20 @@
-DotNetNuke Visual Studio Gallery Tempaltes
+DotNetNuke Visual Studio Gallery Templates
+These templates are designed for DotNetNuke 6+ (references are currently for 6.2.2), 
+managed by Chris Hammond, the Director of Training at DotNetNuke Corporation, you
+can find more about Chris at http://www.chrishammond.com
+
+This VSIX extension package is an offshoot of the ChristocTemplates project, 
+the source code for these templates, as well as older templates are
+available there. http://christoctemplate.codeplex.com
+
 
 V1.0.0 - Release Date 8/24/2012
 
-Description: Initial Visual Studio Gallery installer for DotNetNuke, includes both a C# and VB.NET project template for Visual Studio 2012 and DotNetNuke 6. Configured for DotNetNuke 6.2.2 but should work with all versions of DNN 6.0+
+Description: Initial Visual Studio Gallery installer for DotNetNuke, includes 
+both a C# and VB.NET project template for Visual Studio 2012 and DotNetNuke 6. 
+Configured for DotNetNuke 6.2.2 but should work with all versions of DNN 6.0+
+
+Instructions For Use 
+To use these templates you can follow the instructions found in the DotNetNuke 
+Wiki on the following page
+http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx

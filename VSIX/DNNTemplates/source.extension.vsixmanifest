@@ -10,7 +10,7 @@
     <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
     <Icon>Resources\Package.ico</Icon>
     <PreviewImage>DNN_LOGO_big.png</PreviewImage>
-    <Tags>DotNetNuke DNN CMS "Content Management System" "Open Source" OpenSource</Tags>
+    <Tags>DotNetNuke, DNN, CMS, "Content Management System", "Open Source", OpenSource</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
