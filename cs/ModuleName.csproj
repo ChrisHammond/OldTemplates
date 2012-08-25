@@ -158,9 +158,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort></DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://dnndev/desktopmodules/$safeprojectname$/</IISUrl>
+          <IISUrl>http://$DevEnvironment$/desktopmodules/$safeprojectname$/</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://dnndev/</IISAppRootUrl>
+          <IISAppRootUrl>http://$DevEnvironment$/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
