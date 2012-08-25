@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="e48e838a-c708-4d43-b822-4d5de0d13eed" Version="1.0" Language="en-US" Publisher="DotNetNuke Corporation" />
     <DisplayName>DotNetNukeTemplates</DisplayName>
-    <Description xml:space="preserve">This Visual Studio Package contains C project and item templates to assist with DotNetNuke Extension Development</Description>
+    <Description xml:space="preserve">This Visual Studio Package contains Project Templates to aid in your DotNetNuke Extension Development.</Description>
     <MoreInfo>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</MoreInfo>
     <License>License.txt</License>
     <GettingStartedGuide>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</GettingStartedGuide>
