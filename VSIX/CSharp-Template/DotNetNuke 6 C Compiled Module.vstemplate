@@ -1,5 +1,5 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
-  <TemplateData>  
+  <TemplateData>
     <Name>DotNetNuke 6 C# Compiled Module</Name>
     <Description>A Visual Studio template for DotNetNuke 6 Module Development, designed for Visual Studio 2012</Description>
     <ProjectType>CSharp</ProjectType>
@@ -10,19 +10,24 @@
     <DefaultName>DNNModule</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
-	<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
-  <TemplateContent> 
-  <CustomParameters>
-    <CustomParameter Name="$rootnamespace$" Value="DotNetNuke.Modules."/>
-    <CustomParameter Name="$ownername$" Value="DotNetNuke Corporation"/>
-	<CustomParameter Name="$owneremail$" Value="training@dnncorp.com"/>
-	<CustomParameter Name="$ownerwebsite$" Value="http://www.dotnetnuke.com"/>
-	<CustomParameter Name="$devenvironmenturl$" Value="dnndev" />
-  </CustomParameters>
-  <Project TargetFileName="$safeprojectname$.csproj" File="DnnTemplate.csproj" ReplaceParameters="true">
+  <TemplateContent>
+    <!--
+      You can customize the parameters below if you want to make changes to the templates for your own environments.
+      
+      After changing these parameter values you should rebuild the DNNTemplates project in RELEASE mode and then install the VSIX file found in the bin/release folder
+    -->
+    <CustomParameters>
+      <CustomParameter Name="$rootnamespace$" Value="DotNetNuke.Modules."/>
+      <CustomParameter Name="$ownername$" Value="DotNetNuke Corporation"/>
+      <CustomParameter Name="$owneremail$" Value="training@dnncorp.com"/>
+      <CustomParameter Name="$ownerwebsite$" Value="http://www.dotnetnuke.com"/>
+      <CustomParameter Name="$devenvironmenturl$" Value="dnndev" />
+    </CustomParameters>
+    <Project TargetFileName="$safeprojectname$.csproj" File="DnnTemplate.csproj" ReplaceParameters="true">
       <Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">
         <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.resx">Edit.ascx.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.ascx.resx">Settings.ascx.resx</ProjectItem>
