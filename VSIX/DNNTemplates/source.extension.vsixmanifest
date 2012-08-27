@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="e48e838a-c708-4d43-b822-4d5de0d13eed" Version="1.0" Language="en-US" Publisher="DotNetNuke Corporation" />
-    <DisplayName>DotNetNukeTemplates</DisplayName>
+    <DisplayName>DotNetNuke Project Templates</DisplayName>
     <Description xml:space="preserve">This Visual Studio Package contains Project Templates to aid in your DotNetNuke Extension Development.</Description>
     <MoreInfo>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</MoreInfo>
     <License>License.txt</License>
@@ -14,7 +14,6 @@
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
-    <InstallationTarget Version="[11.0,12.0)" Id="Microsoft.VisualStudio.VWDExpress" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="3.5" />

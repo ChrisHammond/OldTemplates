@@ -101,8 +101,9 @@
     <None Include="DnnTemplate.csproj" />
     <None Include="Documentation\Documentation.css" />
     <None Include="Documentation\Documentation.html" />
-    <VSTemplate Include="DotNetNuke 6 C Compiled Module.vstemplate">
+    <VSTemplate Include="DNN-C-Module.vstemplate">
       <OutputSubPath>DotNetNuke</OutputSubPath>
+      <SubType>Designer</SubType>
     </VSTemplate>
     <None Include="Edit.ascx">
       <SubType>ASPXCodeBehind</SubType>

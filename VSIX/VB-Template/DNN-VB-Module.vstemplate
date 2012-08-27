@@ -45,7 +45,7 @@
       </Folder>
       <Folder Name="Documentation" TargetFolderName="Documentation">
         <ProjectItem ReplaceParameters="true" TargetFileName="Documentation.css">Documentation.css</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Documentation.html">Documentation.html</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Documentation.html" OpenInWebBrowser="true">Documentation.html</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx">Edit.ascx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Edit.ascx.designer.vb">Edit.ascx.designer.vb</ProjectItem>
