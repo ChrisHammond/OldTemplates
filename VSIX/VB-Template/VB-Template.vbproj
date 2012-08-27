@@ -99,7 +99,7 @@
     <None Include="__TemplateIcon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="DotNetNuke 6 VB Compiled Module.vstemplate">
+    <VSTemplate Include="DNN-VB-Module.vstemplate">
       <OutputSubPath>DotNetNuke</OutputSubPath>
     </VSTemplate>
   </ItemGroup>
