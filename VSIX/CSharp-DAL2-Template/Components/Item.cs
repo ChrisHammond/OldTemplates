@@ -18,24 +18,28 @@ using DotNetNuke.Entities.Content;
 
 namespace $rootnamespace$$safeprojectname$.Components
 {
-    [TableName("$safeprojectname$_$safeprojectname$s")]
+    [TableName("$safeprojectname$_Items")]
     //setup the primary key for table
-    [PrimaryKey("$safeprojectname$Id", AutoIncrement = true)]
+    [PrimaryKey("ItemId", AutoIncrement = true)]
     //configure caching using PetaPoco
-    [Cacheable("$safeprojectname$s", CacheItemPriority.Default, 20)]
+    [Cacheable("Items", CacheItemPriority.Default, 20)]
     //scope the objects to the ModuleId of a module on a page (or copy of a module on a page)
     [Scope("ModuleId")]
-    class $safeprojectname$
+    class Item
     {
-            ///<summary>
-        /// A string with the name of the $safeprojectname$Name
+        ///<summary>
+        /// The ID of your object with the name of the ItemName
         ///</summary>
-        public string $safeprojectname$Name { get; set; }
+        public int ItemId { get; set; }
+            ///<summary>
+        /// A string with the name of the ItemName
+        ///</summary>
+        public string ItemName { get; set; }
 
         ///<summary>
         /// A string with the description of the object
         ///</summary>
-        public string $safeprojectname$Description { get; set; }
+        public string ItemDescription { get; set; }
 
         ///<summary>
         /// An integeger with the user id of the assigned user for the object
@@ -66,7 +70,5 @@ namespace $rootnamespace$$safeprojectname$.Components
         /// The date the object was updated
         ///</summary>
         public new DateTime LastModifiedOnDate { get; set; }
-
-
     }
 }

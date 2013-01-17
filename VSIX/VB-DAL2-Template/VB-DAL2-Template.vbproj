@@ -90,9 +90,6 @@
     <None Include="Documentation\Documentation.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.vb" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="__TemplateIcon.ico" />
   </ItemGroup>
   <ItemGroup>
