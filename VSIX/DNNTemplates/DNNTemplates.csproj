@@ -176,9 +176,23 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSharp-DAL2-Template\CSharp-DAL2-Template.csproj">
+      <Project>{050F84AF-35A1-4218-B33C-752BE340B4C7}</Project>
+      <Name>CSharp-DAL2-Template</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\CSharp-Template\CSharp-Template.csproj">
       <Project>{A7EE0F38-C70B-47D8-AEE7-AF8E684B6EA7}</Project>
       <Name>CSharp-Template</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\VB-DAL2-Template\VB-DAL2-Template.vbproj">
+      <Project>{1F09CEAC-9593-4583-9E40-E5FBCFD3D036}</Project>
+      <Name>VB-DAL2-Template</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>

@@ -13,9 +13,8 @@
       <license src="License.txt"></license>
       <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
       <dependencies>
-        <dependency type="CoreVersion">06.02.02</dependency>
-      </dependencies>
-      
+        <dependency type="CoreVersion">07.00.02</dependency>
+      </dependencies>      
       <components>
         <component type="Script">
           <scripts>
