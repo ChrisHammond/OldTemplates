@@ -6,37 +6,38 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>
     </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7D61A32C-0F21-453F-A981-BD8E5A3A5304}</ProjectGuid>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{279C5C96-5031-407A-919C-EF50FD06454D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$rootnamespace$$safeprojectname$</RootNamespace>
     <AssemblyName>$safeprojectname$</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <OutputPath>..\..\bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>$safeprojectname$.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>$safeprojectname$.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetNuke, Version=6.2.2.125, Culture=neutral, processorArchitecture=MSIL">
@@ -47,52 +48,71 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\FeatureController.cs" />
-    <Compile Include="Data\DataProvider.cs" />
-    <Compile Include="$safeprojectname$ModuleBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\FeatureController.vb" />
+    <Compile Include="Components\$safeprojectname$Controller.vb" />
+    <Compile Include="Settings.ascx.designer.vb">
+      <DependentUpon>Settings.ascx</DependentUpon>
     </Compile>
-    <Compile Include="$safeprojectname$ModuleSettingsBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Edit.ascx.cs">
-      <DependentUpon>Edit.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Edit.ascx.designer.cs">
-      <DependentUpon>Edit.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
-    <Compile Include="Settings.ascx.cs">
+    <Compile Include="Settings.ascx.vb">
       <DependentUpon>Settings.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Settings.ascx.designer.cs">
-      <DependentUpon>Settings.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="View.ascx.cs">
-      <DependentUpon>View.ascx</DependentUpon>
+    <Compile Include="$safeprojectname$SettingsBase.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View.ascx.designer.cs">
+    <Compile Include="Edit.ascx.designer.vb">
+      <DependentUpon>Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.ascx.vb">
+      <DependentUpon>Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="$safeprojectname$ModuleBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.ascx.designer.vb">
       <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.vb">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -109,25 +129,37 @@
     <Content Include="$safeprojectname$.dnn" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_LocalResources\Edit.ascx.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.resx" />
+    <Content Include="App_LocalResources\View.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="BuildScripts\ModulePackage.targets" />
     <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_LocalResources\View.ascx.resx" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\00.00.01.sqldataprovider" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_LocalResources\Edit.ascx.resx" />
-    <Content Include="App_LocalResources\Settings.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
-    <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\UnInstall.sqldataprovider" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
@@ -136,11 +168,11 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56441</DevelopmentServerPort>
+          <DevelopmentServerPort>62640</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://$devenvironmenturl$/desktopmodules/$safeprojectname$</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://$devenvironmenturl$</IISAppRootUrl>
+          <IISAppRootUrl>http://$devenvironmenturl$/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -149,14 +181,14 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
-  </ProjectExtensions>  
+  </ProjectExtensions>
   <PropertyGroup>
     <Extension>zip</Extension>
     <DNNFileName>$safeprojectname$</DNNFileName>
     <PackageName>$safeprojectname$</PackageName>
     <MSBuildCommunityTasksPath>$(SolutionDir)\packages\MSBuildTasks.1.4.0.45\tools</MSBuildCommunityTasksPath>
   </PropertyGroup>
-  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Import Project="BuildScripts\ModulePackage.targets" />
   <Target Name="AfterBuild" DependsOnTargets="PackageModule">
   </Target>
 </Project>

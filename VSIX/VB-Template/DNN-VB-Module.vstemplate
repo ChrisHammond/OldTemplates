@@ -25,7 +25,7 @@
       <CustomParameter Name="$ownername$" Value="DotNetNuke Corporation"/>
       <CustomParameter Name="$owneremail$" Value="training@dnncorp.com"/>
       <CustomParameter Name="$ownerwebsite$" Value="http://www.dotnetnuke.com"/>
-      <CustomParameter Name="$devenvironmenturl$" Value="dnndev" />
+      <CustomParameter Name="$devenvironmenturl$" Value="dnndev.me" />
     </CustomParameters>
     <Project TargetFileName="$safeprojectname$.vbproj" File="vbtemplate.vbproj" ReplaceParameters="true">
       <Folder Name="App_LocalResources" TargetFolderName="App_LocalResources">

@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\FeatureController.cs" />
-    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Components\$safeprojectname$Controller.cs" />
+    <Compile Include="Components\$safeprojectname$.cs" />
+
     <Compile Include="$safeprojectname$ModuleBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -79,7 +81,6 @@
       <DependentUpon>Edit.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
     <Compile Include="Settings.ascx.cs">
       <DependentUpon>Settings.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

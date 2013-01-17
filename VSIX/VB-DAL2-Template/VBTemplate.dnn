@@ -7,13 +7,13 @@
       <owner>
         <name>$ownername$</name>
         <organization>$ownername$</organization>
-        <url>$ownerwebsite$</url>
+        <url>http://www.dotnetnuke.com</url>
         <email>$owneremail$</email>
       </owner>
       <license src="License.txt"></license>
       <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
       <dependencies>
-        <dependency type="CoreVersion">07.00.02</dependency>
+        <dependency type="CoreVersion">06.02.02</dependency>
       </dependencies>
       
       <components>
@@ -46,7 +46,7 @@
           <desktopModule>
             <moduleName>$safeprojectname$</moduleName>
             <foldername>$safeprojectname$</foldername>
-            <businessControllerClass>DotNetNuke.Modules.$safeprojectname$.Components.FeatureController</businessControllerClass>
+            <businessControllerClass>$rootnamespace$$safeprojectname$.Components.FeatureController</businessControllerClass>
             <supportedFeatures />
             <moduleDefinitions>
               <moduleDefinition>
