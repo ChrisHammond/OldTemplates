@@ -14,59 +14,59 @@ using DotNetNuke.Data;
 
 namespace $rootnamespace$$safeprojectname$.Components
 {
-    class $safeprojectname$Controller
+    class ItemController
    { 
-                public void Create$safeprojectname$($safeprojectname$ t)
+        public void CreateItem(Item t)
         {
             using (IDataContext ctx = DataContext.Instance())
             {
-                var rep = ctx.GetRepository<$safeprojectname$>();
+                var rep = ctx.GetRepository<Item>();
                 rep.Insert(t);
             }
         }
 
-        public void Delete$safeprojectname$(int itemId, int moduleId)
+        public void DeleteItem(int itemId, int moduleId)
         {
-            var t = Get$safeprojectname$(itemId,moduleId);
-            Delete$safeprojectname$(t);
+            var t = GetItem(itemId,moduleId);
+            DeleteItem(t);
         }
 
-        public void Delete$safeprojectname$($safeprojectname$ t)
+        public void DeleteItem(Item t)
         {
             using (IDataContext ctx = DataContext.Instance())
             {
-                var rep = ctx.GetRepository<$safeprojectname$>();
+                var rep = ctx.GetRepository<Item>();
                 rep.Delete(t);
             }
         }
 
-        public IEnumerable<$safeprojectname$> Get$safeprojectname$s(int moduleId)
+        public IEnumerable<Item> GetItems(int moduleId)
         {
-            IEnumerable<$safeprojectname$> t;
+            IEnumerable<Item> t;
             using (IDataContext ctx = DataContext.Instance())
             {
-                var rep = ctx.GetRepository<$safeprojectname$>();
+                var rep = ctx.GetRepository<Item>();
                 t = rep.Get(moduleId);
             }
             return t;
         }
 
-        public $safeprojectname$ Get$safeprojectname$(int itemId, int moduleId)
+        public Item GetItem(int itemId, int moduleId)
         {
-            $safeprojectname$ t;
+            Item t;
             using (IDataContext ctx = DataContext.Instance())
             {
-                var rep = ctx.GetRepository<$safeprojectname$>();
+                var rep = ctx.GetRepository<Item>();
                 t = rep.GetById(itemId, moduleId);
             }
             return t;
         }
 
-        public void Update$safeprojectname$($safeprojectname$ t)
+        public void UpdateItem(Item t)
         {
             using (IDataContext ctx = DataContext.Instance())
             {
-                var rep = ctx.GetRepository<$safeprojectname$>();
+                var rep = ctx.GetRepository<Item>();
                 rep.Update(t);
             }
         }        

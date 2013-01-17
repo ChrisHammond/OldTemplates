@@ -43,9 +43,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="DotNetNuke.WebUtility, Version=4.2.1.783, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.WebUtility.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -64,8 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\FeatureController.cs" />
-    <Compile Include="Components\$safeprojectname$Controller.cs" />
-    <Compile Include="Components\$safeprojectname$.cs" />
+    <Compile Include="Components\ItemController.cs" />
+    <Compile Include="Components\Item.cs" />
 
     <Compile Include="$safeprojectname$ModuleBase.cs">
       <SubType>ASPXCodeBehind</SubType>

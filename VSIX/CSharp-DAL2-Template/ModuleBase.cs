@@ -10,11 +10,23 @@
 ' 
 */
 
+using System;
 using DotNetNuke.Entities.Modules;
 
 namespace $rootnamespace$$safeprojectname$
 {
     public class $safeprojectname$ModuleBase : PortalModuleBase
     {
+        public int ItemId
+        {
+            get
+            {
+                var qs = Request.QueryString["tid"];
+                if (qs != null)
+                    return Convert.ToInt32(qs);
+                return -1;
+            }
+
+        }
     }
 }

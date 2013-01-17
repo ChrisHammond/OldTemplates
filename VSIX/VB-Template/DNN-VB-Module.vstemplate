@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>DotNetNuke 6 VB.Net Compiled Module</Name>
+    <Name>DotNetNuke 7 VB.Net Compiled Module</Name>
     <Description>A Visual Studio template for DotNetNuke 6 Module Development, designed for Visual Studio 2012</Description>
     <ProjectType>VisualBasic</ProjectType>
     <ProjectSubType>

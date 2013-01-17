@@ -39,8 +39,8 @@
       </Folder>
       <Folder Name="Components" TargetFolderName="Components">
         <ProjectItem ReplaceParameters="true" TargetFileName="FeatureController.cs">FeatureController.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.cs">ModuleName.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Controller.cs">ModuleNameController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Item.cs">Item.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemController.cs">ItemController.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dnn">DnnTemplate.dnn</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ModuleBase.cs">ModuleBase.cs</ProjectItem>

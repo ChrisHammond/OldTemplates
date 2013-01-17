@@ -1,5 +1,4 @@
-﻿
-/************************************************************/
+﻿/************************************************************/
 /*****              SqlDataProvider                     *****/
 /*****                                                  *****/
 /*****                                                  *****/
@@ -9,6 +8,33 @@
 /*****                                                  *****/
 /************************************************************/
 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}$safeprojectname$_$safeprojectname$s]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}$safeprojectname$_$safeprojectname$s]
+GO
+
+CREATE TABLE {databaseOwner}{objectQualifier}$safeprojectname$_$safeprojectname$s
+    (
+    $safeprojectname$Id int NOT NULL IDENTITY (1, 1),
+    $safeprojectname$Name nvarchar(MAX) NOT NULL,
+    $safeprojectname$Description nvarchar(MAX) NOT NULL,
+    AssignedUserId int NULL,
+    ModuleId int NOT NULL,
+    CreatedOnDate datetime NOT NULL,
+    CreatedByUserId int NOT NULL,
+    LastModifiedOnDate datetime NOT NULL,
+    LastModifiedByUserId int NOT NULL
+    )  ON [PRIMARY]
+     TEXTIMAGE_ON [PRIMARY]
+GO
+
+
+ALTER TABLE {databaseOwner}{objectQualifier}$safeprojectname$_$safeprojectname$s ADD CONSTRAINT
+    PK_{objectQualifier}$safeprojectname$_$safeprojectname$s PRIMARY KEY CLUSTERED 
+    (
+    $safeprojectname$Id
+    ) WITH( STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+
+GO
 
 
 /************************************************************/
