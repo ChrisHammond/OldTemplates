@@ -23,4 +23,13 @@ Imports DotNetNuke.Entities.Modules
 Public Class $safeprojectname$ModuleBase
     Inherits PortalModuleBase
 
+    Public ReadOnly Property ItemId() As Integer
+        Get
+            Dim qs = Request.QueryString("tid")
+            If qs IsNot Nothing Then
+                Return Convert.ToInt32(qs)
+            End If
+            Return -1
+        End Get
+    End Property
 End Class

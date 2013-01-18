@@ -1,4 +1,4 @@
-﻿' Copyright (c) $year$  $ownername$
+﻿' Copyright (c) 2013  DotNetNuke Corporation
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -12,6 +12,8 @@ Imports DotNetNuke.Entities.Modules.Actions
 Imports DotNetNuke.Entities.Modules
 Imports DotNetNuke.Services.Exceptions
 Imports DotNetNuke.Services.Localization
+Imports $rootnamespace$$safeprojectname$.Components
+Imports DotNetNuke.UI.Utilities
 
 ''' <summary>
 ''' The View class displays the content
@@ -24,7 +26,7 @@ Imports DotNetNuke.Services.Localization
 ''' defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
 ''' 
 ''' </summary>
-Public Class View
+Partial Class View
     Inherits $safeprojectname$ModuleBase
     Implements IActionable
 
@@ -39,6 +41,10 @@ Public Class View
     ''' -----------------------------------------------------------------------------
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Try
+
+            Dim tc As New ItemController()
+            rptItemList.DataSource = tc.GetItems(ModuleId)
+            rptItemList.DataBind()
 
         Catch exc As Exception
             Exceptions.ProcessModuleLoadException(Me, exc)
@@ -63,5 +69,38 @@ Public Class View
             Return Actions
         End Get
     End Property
+
+    Protected Sub rptItemListOnItemDataBound(ByVal sender As Object, ByVal e As RepeaterItemEventArgs) Handles rptItemList.ItemDataBound
+
+        If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
+            Dim lnkEdit As HyperLink = e.Item.FindControl("lnkEdit")
+            Dim lnkDelete As LinkButton = e.Item.FindControl("lnkDelete")
+            Dim pnlAdminControls As Panel = e.Item.FindControl("pnlAdminControls")
+
+            Dim t As Item = e.Item.DataItem
+            If IsEditable And lnkDelete IsNot Nothing And lnkEdit IsNot Nothing Then
+                pnlAdminControls.Visible = True
+                lnkDelete.CommandArgument = t.ItemId.ToString()
+                lnkDelete.Enabled = lnkEdit.Enabled = lnkDelete.Visible = lnkEdit.Visible = True
+                lnkEdit.NavigateUrl = EditUrl(String.Empty, String.Empty, "Edit", "tid=" + t.ItemId.ToString())
+                ClientAPI.AddButtonConfirm(lnkDelete, Localization.GetString("ConfirmDelete", LocalResourceFile))
+            Else
+                pnlAdminControls.Visible = False
+            End If
+
+        End If
+
+
+    End Sub
+
+    Protected Sub rptItemListOnItemCommand(ByVal sender As Object, ByVal e As RepeaterCommandEventArgs) Handles rptItemList.ItemCommand
+        If e.CommandName = "Delete" Then
+            Dim tc As ItemController
+
+            tc.DeleteItem(e.CommandArgument, ModuleId)
+
+        End If
+        Response.Redirect(Common.Globals.NavigateURL())
+    End Sub
 
 End Class
