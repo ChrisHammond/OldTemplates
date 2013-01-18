@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>DotNetNuke 7 VB.Net DAL2 Compiled Module</Name>
-    <Description>A Visual Studio template for DotNetNuke 7 Module Development using DAl2, designed for Visual Studio 2012</Description>
+    <Description>A Visual Studio template for DotNetNuke 7 Module Development using DAL2, designed for Visual Studio 2012</Description>
     <ProjectType>VisualBasic</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -39,6 +39,8 @@
       </Folder>
       <Folder Name="Components" TargetFolderName="Components">
         <ProjectItem ReplaceParameters="true" TargetFileName="FeatureController.vb">FeatureController.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Item.vb">Item.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemController.vb">ItemController.vb</ProjectItem>
       </Folder>
       <Folder Name="Documentation" TargetFolderName="Documentation">
         <ProjectItem ReplaceParameters="true" TargetFileName="Documentation.css">Documentation.css</ProjectItem>

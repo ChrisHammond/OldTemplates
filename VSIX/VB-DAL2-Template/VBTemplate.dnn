@@ -7,13 +7,13 @@
       <owner>
         <name>$ownername$</name>
         <organization>$ownername$</organization>
-        <url>http://www.dotnetnuke.com</url>
+        <url>$ownerwebsite$</url>
         <email>$owneremail$</email>
       </owner>
       <license src="License.txt"></license>
       <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
       <dependencies>
-        <dependency type="CoreVersion">06.02.02</dependency>
+        <dependency type="CoreVersion">07.00.02</dependency>
       </dependencies>
       
       <components>

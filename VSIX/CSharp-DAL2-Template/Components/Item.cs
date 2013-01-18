@@ -56,17 +56,17 @@ namespace $rootnamespace$$safeprojectname$.Components
         ///</summary>
         public int CreatedByUserId { get; set; }
 
-    ///<summary>
+        ///<summary>
         /// An integer for the user id of the user who last updated the object
         ///</summary>
         public int LastModifiedByUserId { get; set; }
     
-    ///<summary>
+        ///<summary>
         /// The date the object was created
         ///</summary>
-    public new DateTime CreatedOnDate { get; set; }
+        public new DateTime CreatedOnDate { get; set; }
 
-    ///<summary>
+        ///<summary>
         /// The date the object was updated
         ///</summary>
         public new DateTime LastModifiedOnDate { get; set; }

@@ -7,7 +7,7 @@
       <owner>
         <name>$ownername$</name>
         <organization>$ownername$</organization>
-        <url>http://www.dotnetnuke.com</url>
+        <url>$ownerwebsite$</url>
         <email>$owneremail$</email>
       </owner>
       <license src="License.txt"></license>
