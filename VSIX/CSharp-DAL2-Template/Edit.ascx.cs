@@ -90,12 +90,13 @@ namespace $rootnamespace$$safeprojectname$
                     CreatedOnDate = DateTime.Now,
                     ItemName = txtName.Text.Trim(),
                     ItemDescription = txtDescription.Text.Trim(),
-                    ModuleId = ModuleId
+                    
                 };
             }
 
             t.LastModifiedOnDate = DateTime.Now;
             t.LastModifiedByUserId = UserId;
+            t.ModuleId = ModuleId
 
             if (t.ItemId > 0)
             {

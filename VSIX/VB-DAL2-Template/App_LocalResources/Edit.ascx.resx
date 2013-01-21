@@ -144,4 +144,10 @@
   <data name="lblName.Text" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="BasicSettings.Text" xml:space="preserve">
+    <value>Basic $safeprojectname$ Settings</value>
+  </data>
+  <data name="ExpandAll.Text" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
 </root>

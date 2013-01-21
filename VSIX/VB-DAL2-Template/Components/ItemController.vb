@@ -43,7 +43,7 @@ Namespace Components
             Return t
         End Function
 
-        Public Function GetItem(ByVal itemid As Integer, ByVal moduleId As Integer) As IEnumerable(Of Item)
+        Public Function GetItem(ByVal itemid As Integer, ByVal moduleId As Integer) As Item
             Dim t As Item
 
             Using ctx As IDataContext = DataContext.Instance()

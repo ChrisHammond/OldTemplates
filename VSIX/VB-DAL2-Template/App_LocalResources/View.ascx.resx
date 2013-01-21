@@ -133,9 +133,6 @@
     <value>Edit</value>
   </data>
   <data name="EditModule.Text" xml:space="preserve">
-    <value>Edit Module</value>
-  </data>
-  <data name="ExpandAll.Text" xml:space="preserve">
-    <value>Expand All</value>
+    <value>Add Item</value>
   </data>
 </root>
