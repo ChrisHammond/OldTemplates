@@ -75,27 +75,27 @@ Partial Class View
         If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
             Dim lnkEdit As HyperLink = e.Item.FindControl("lnkEdit")
             Dim lnkDelete As LinkButton = e.Item.FindControl("lnkDelete")
-            Dim pnlAdminControls As Panel = e.Item.FindControl("pnlAdminControls")
-
+            Dim pnlAdmin As Panel = e.Item.FindControl("pnlAdmin")
             Dim t As Item = e.Item.DataItem
+
             If IsEditable And lnkDelete IsNot Nothing And lnkEdit IsNot Nothing Then
-                pnlAdminControls.Visible = True
+                pnlAdmin.Visible = True
                 lnkDelete.CommandArgument = t.ItemId.ToString()
-                lnkDelete.Enabled = lnkEdit.Enabled = lnkDelete.Visible = lnkEdit.Visible = True
+                lnkDelete.Enabled = True
+                lnkDelete.Visible = True
+                lnkEdit.Enabled = True
+                lnkEdit.Visible = True
                 lnkEdit.NavigateUrl = EditUrl(String.Empty, String.Empty, "Edit", "tid=" + t.ItemId.ToString())
                 ClientAPI.AddButtonConfirm(lnkDelete, Localization.GetString("ConfirmDelete", LocalResourceFile))
             Else
-                pnlAdminControls.Visible = False
+                pnlAdmin.Visible = False
             End If
-
         End If
-
-
     End Sub
 
     Protected Sub rptItemListOnItemCommand(ByVal sender As Object, ByVal e As RepeaterCommandEventArgs) Handles rptItemList.ItemCommand
         If e.CommandName = "Delete" Then
-            Dim tc As ItemController
+            Dim tc As New ItemController
 
             tc.DeleteItem(e.CommandArgument, ModuleId)
 

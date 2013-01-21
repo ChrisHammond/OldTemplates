@@ -7,10 +7,10 @@
 ' CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 ' DEALINGS IN THE SOFTWARE.
 ' 
-Imports DotNetNuke.Entities.Modules.Actions
-Imports DotNetNuke.Entities.Modules
+Imports $rootnamespace$$safeprojectname$.Components
 Imports DotNetNuke.Services.Exceptions
-Imports DotNetNuke.Services.Localization
+Imports DotNetNuke.Entities.Users
+
 
 ''' <summary>
 ''' The View class displays the content
@@ -39,11 +39,62 @@ Public Class Edit
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Try
 
+            If Not Page.IsPostBack Then
+                ddlAssignedUser.DataSource = UserController.GetUsers(PortalId)
+                ddlAssignedUser.DataTextField = "Username"
+                ddlAssignedUser.DataValueField = "UserId"
+                ddlAssignedUser.DataBind()
+
+                If ItemId > 0 Then
+                    Dim tc As New ItemController
+                    Dim t As Item = tc.GetItem(ItemId, ModuleId)
+                    If t IsNot Nothing Then
+                        txtName.Text = t.ItemName
+                        txtDescription.Text = t.ItemDescription
+                        ddlAssignedUser.Items.FindByValue(t.AssignedUserId.ToString()).Selected = True
+                    End If
+                End If
+            End If
         Catch exc As Exception
             Exceptions.ProcessModuleLoadException(Me, exc)
         End Try
 
     End Sub
 
+
+    Protected Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        Dim t As New Item()
+        Dim tc As New ItemController
+        If ItemId > 0 Then
+            t = tc.GetItem(ItemId, ModuleId)
+            t.ItemName = txtName.Text.Trim()
+            t.ItemDescription = txtDescription.Text.Trim()
+            t.AssignedUserId = Convert.ToInt32(ddlAssignedUser.SelectedValue)
+
+        Else
+            t.ItemName = txtName.Text.Trim()
+            t.ItemDescription = txtDescription.Text.Trim()
+            t.AssignedUserId = Convert.ToInt32(ddlAssignedUser.SelectedValue)
+
+            t.CreatedByUserId = UserId
+            t.CreatedOnDate = DateTime.Now
+        End If
+
+        t.LastModifiedByUserId = UserId
+        t.LastModifiedOnDate = DateTime.Now
+        t.ModuleId = ModuleId
+
+        If t.ItemId > 0 Then
+            tc.UpdateItem(t)
+        Else
+            tc.CreateItem(t)
+        End If
+        Response.Redirect(Common.Globals.NavigateURL())
+    End Sub
+
+
+    Protected Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Response.Redirect(Common.Globals.NavigateURL())
+    End Sub
     
 End Class
