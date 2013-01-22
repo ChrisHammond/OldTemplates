@@ -7,9 +7,15 @@ This VSIX extension package is an offshoot of the ChristocTemplates project,
 the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
-V2.0.0 - Release Date TBD
+V2.0.0 - Release Date 1/22/2013
 Description: Updated project template for DotNetNuke 7.0.2, provided two new 
-additional templates for C# and VB.Net versions of the new DAL2 data access layer
+additional templates for C# and VB.Net versions of the new DAL2 data access layer.
+
+The project templates now use DNNDEV.ME as the URL for your modules, so you will 
+need to update your development environment for this domain name instead of just 
+DNNDEV.
+
+
 
 V1.0.0 - Release Date 8/24/2012
 
