@@ -96,7 +96,7 @@ namespace $rootnamespace$$safeprojectname$
 
             t.LastModifiedOnDate = DateTime.Now;
             t.LastModifiedByUserId = UserId;
-            t.ModuleId = ModuleId
+            t.ModuleId = ModuleId;
 
             if (t.ItemId > 0)
             {

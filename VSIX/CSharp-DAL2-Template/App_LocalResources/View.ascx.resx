@@ -124,7 +124,7 @@
     <value>Collapse All</value>
   </data>
   <data name="ConfirmDelete.Text" xml:space="preserve">
-    <value>Are you sure you want to delete this $safeprojectname$</value>
+    <value>Are you sure you want to delete this Item</value>
   </data>
   <data name="DeleteItem.Text" xml:space="preserve">
     <value>Delete</value>
@@ -134,8 +134,5 @@
   </data>
   <data name="EditModule.Text" xml:space="preserve">
     <value>Add Item</value>
-  </data>
-  <data name="ExpandAll.Text" xml:space="preserve">
-    <value>Expand All</value>
   </data>
 </root>
