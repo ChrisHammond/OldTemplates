@@ -136,9 +136,9 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56441</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <AutoAssignPort>false</AutoAssignPort>
+          <DevelopmentServerPort />
+          <DevelopmentServerVPath />
           <IISUrl>http://$devenvironmenturl$/desktopmodules/$safeprojectname$</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
           <IISAppRootUrl>http://$devenvironmenturl$</IISAppRootUrl>
