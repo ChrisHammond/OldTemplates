@@ -64,11 +64,11 @@ namespace $rootnamespace$$safeprojectname$.Components
         ///<summary>
         /// The date the object was created
         ///</summary>
-        public new DateTime CreatedOnDate { get; set; }
+        public DateTime CreatedOnDate { get; set; }
 
         ///<summary>
         /// The date the object was updated
         ///</summary>
-        public new DateTime LastModifiedOnDate { get; set; }
+        public DateTime LastModifiedOnDate { get; set; }
     }
 }
