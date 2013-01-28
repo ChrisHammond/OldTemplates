@@ -89,12 +89,11 @@ Public Class Edit
         Else
             tc.CreateItem(t)
         End If
-        Response.Redirect(Common.Globals.NavigateURL())
+        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
     End Sub
-
-
+    
     Protected Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        Response.Redirect(Common.Globals.NavigateURL())
+        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
     End Sub
     
 End Class

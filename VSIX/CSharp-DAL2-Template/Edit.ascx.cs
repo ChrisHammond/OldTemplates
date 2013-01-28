@@ -104,20 +104,14 @@ namespace $rootnamespace$$safeprojectname$
             }
             else
             {
-
                 tc.CreateItem(t);
             }
-
-            Response.Redirect(Common.Globals.NavigateURL());
-
+            Response.Redirect(DotNetNuke.Common.Globals.NavigateURL());
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Common.Globals.NavigateURL());
+            Response.Redirect(DotNetNuke.Common.Globals.NavigateURL());
         }
-    
     }
-
-
 }

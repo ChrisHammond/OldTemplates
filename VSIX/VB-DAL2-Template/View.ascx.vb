@@ -71,7 +71,6 @@ Partial Class View
     End Property
 
     Protected Sub rptItemListOnItemDataBound(ByVal sender As Object, ByVal e As RepeaterItemEventArgs) Handles rptItemList.ItemDataBound
-
         If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
             Dim lnkEdit As HyperLink = e.Item.FindControl("lnkEdit")
             Dim lnkDelete As LinkButton = e.Item.FindControl("lnkDelete")
@@ -96,11 +95,8 @@ Partial Class View
     Protected Sub rptItemListOnItemCommand(ByVal sender As Object, ByVal e As RepeaterCommandEventArgs) Handles rptItemList.ItemCommand
         If e.CommandName = "Delete" Then
             Dim tc As New ItemController
-
             tc.DeleteItem(e.CommandArgument, ModuleId)
-
         End If
-        Response.Redirect(Common.Globals.NavigateURL())
+        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
     End Sub
-
 End Class
