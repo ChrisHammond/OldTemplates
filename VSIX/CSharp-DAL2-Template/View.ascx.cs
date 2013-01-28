@@ -92,11 +92,9 @@ namespace $rootnamespace$$safeprojectname$
                 var tc = new ItemController();
                 tc.DeleteItem(Convert.ToInt32(e.CommandArgument), ModuleId);
             }
-
-            Response.Redirect(Common.Globals.NavigateURL());
+            Response.Redirect(DotNetNuke.Common.Globals.NavigateURL());
         }
-
-
+        
         public ModuleActionCollection ModuleActions
         {
             get
