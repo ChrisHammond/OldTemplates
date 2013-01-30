@@ -13,7 +13,7 @@
       <Output TaskParameter="Value" PropertyName="Version" />
     </XmlRead>
 
-    <!--in VS $year$ we exclude the packages folder -->
+    <!--in VS 2012 we exclude the packages folder -->
     <ItemGroup>     
       <InstallInclude Include="**\*.ascx" Exclude="packages\**" />
       <InstallInclude Include="**\*.asmx" Exclude="packages\**" />
