@@ -69,7 +69,6 @@
     <None Include="DnnTemplate.dnn" />
     <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
     <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
-    <None Include="DnnTemplate.v11.suo" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Components\FeatureController.cs" />

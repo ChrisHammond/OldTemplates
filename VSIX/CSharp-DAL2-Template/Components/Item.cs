@@ -42,7 +42,7 @@ namespace $rootnamespace$$safeprojectname$.Components
         public string ItemDescription { get; set; }
 
         ///<summary>
-        /// An integeger with the user id of the assigned user for the object
+        /// An integer with the user id of the assigned user for the object
         ///</summary>
         public int AssignedUserId { get; set; }
 
