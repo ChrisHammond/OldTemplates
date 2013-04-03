@@ -23,7 +23,7 @@
      <InstallInclude Include="**\*.aspx" Exclude="packages\**" />
      <InstallInclude Include="**\*.js" Exclude="packages\**" />
      <InstallInclude Include="**\*.txt"  Exclude="**\obj\**;**\_ReSharper*\**;packages\**;" />
-     <InstallInclude Include="**\images\*.*" Exclude="packages\**" />
+     <InstallInclude Include="**\images\**" Exclude="packages\**" />
    </ItemGroup>
 
    <ItemGroup>
@@ -39,7 +39,7 @@
      <SourceInclude Include="**\*.js" />
      <SourceInclude Include="**\*.dnn" />
      <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;" />
-     <SourceInclude Include="**\images\*.*" />
+     <SourceInclude Include="**\images\**" />
      <SourceInclude Include="**\*.vb" />
 	 <SourceInclude Include="**\Packages\**" />
      <SourceInclude Include="**\*.vb.designer" />

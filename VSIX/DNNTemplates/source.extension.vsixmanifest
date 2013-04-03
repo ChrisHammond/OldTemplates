@@ -4,12 +4,12 @@
     <Identity Id="e48e838a-c708-4d43-b822-4d5de0d13eed" Version="2.2" Language="en-US" Publisher="Chris Hammond" />
     <DisplayName>DotNetNuke Project Templates</DisplayName>
     <Description xml:space="preserve">This Visual Studio Package contains Project Templates to aid in your DotNetNuke Extension development.</Description>
-    <MoreInfo>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</MoreInfo>
+    <MoreInfo>http://www.christoc.com/projects/moduledevelopmenttemplates</MoreInfo>
     <License>License.txt</License>
     <GettingStartedGuide>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</GettingStartedGuide>
     <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
     <Icon>Resources\Package.ico</Icon>
-    <PreviewImage>DNN_LOGO_big.png</PreviewImage>
+    <PreviewImage>Resources\Package.ico</PreviewImage>
     <Tags>DotNetNuke, DNN, CMS, "Content Management System", "Open Source", OpenSource</Tags>
   </Metadata>
   <Installation>

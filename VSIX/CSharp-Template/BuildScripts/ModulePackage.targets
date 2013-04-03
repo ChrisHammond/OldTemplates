@@ -24,7 +24,7 @@
       <InstallInclude Include="**\*.aspx" Exclude="packages\**" />
       <InstallInclude Include="**\*.js" Exclude="packages\**" />
       <InstallInclude Include="**\*.txt"  Exclude="**\obj\**;**\_ReSharper*\**;packages\**;" />
-      <InstallInclude Include="**\images\*.*" Exclude="packages\**" />
+      <InstallInclude Include="**\images\**" Exclude="packages\**" />
       
     </ItemGroup>
 
@@ -40,7 +40,7 @@
       <SourceInclude Include="**\*.aspx" />
       <SourceInclude Include="**\*.js" />
       <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;" />
-      <SourceInclude Include="**\images\*.*" />
+      <SourceInclude Include="**\images\**" />
       <SourceInclude Include="**\*.cs" />
 	  <SourceInclude Include="**\Packages\**" />
       <SourceInclude Include="**\*.cs.designer" />

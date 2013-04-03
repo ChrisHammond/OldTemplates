@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DotNetNuke Templates")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DotNetNuke Corporation")]
+[assembly: AssemblyCompany("Christoc.com Software Solutions")]
 [assembly: AssemblyProduct("DotNetNuke Templates")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
