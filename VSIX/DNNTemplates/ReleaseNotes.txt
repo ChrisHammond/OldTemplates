@@ -1,5 +1,5 @@
 DotNetNuke Visual Studio Gallery Templates
-These templates are designed for DotNetNuke 7+ (references are currently for 7.0.2), 
+These templates are designed for DotNetNuke 7+ (references are currently for 7.0.2),
 managed by Chris Hammond, owner Christoc.com Software Solutions
 http://www.christoc.com
 
@@ -7,9 +7,11 @@ This VSIX extension package is an offshoot of the ChristocTemplates project,
 the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
-V2.2 - Release Date TBD
+V2.2 - Release Date 4/3/2013
 Description: Fixed Release Build location (wasn't going into the DNN root)
 Fixed copyright messages in the VB project.
+Renamed default namespace and email addresses to Christoc (to match Codeplex project name)
+Upgraded to MSBuildTasks V1.4.0.56
 
 
 V2.1 - Release Date 1/28/2013
@@ -24,8 +26,6 @@ additional templates for C# and VB.Net versions of the new DAL2 data access laye
 The project templates now use DNNDEV.ME as the URL for your modules, so you will 
 need to update your development environment for this domain name instead of just 
 DNNDEV.
-
-
 
 V1.0.0 - Release Date 8/24/2012
 
