@@ -46,7 +46,7 @@
           <desktopModule>
             <moduleName>$safeprojectname$</moduleName>
             <foldername>$safeprojectname$</foldername>
-            <businessControllerClass>DotNetNuke.Modules.$safeprojectname$.Components.FeatureController</businessControllerClass>
+            <businessControllerClass>$rootnamespace$$safeprojectname$.Components.FeatureController</businessControllerClass>
             <supportedFeatures />
             <moduleDefinitions>
               <moduleDefinition>
