@@ -93,6 +93,7 @@
             <basePath>bin</basePath>
             <assembly>
               <name>$safeprojectname$.dll</name>
+              <path>bin</path>
             </assembly>
           </assemblies>
         </component>
