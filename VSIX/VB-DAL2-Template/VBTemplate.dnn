@@ -91,7 +91,6 @@
         </component>
         <component type="Assembly">
           <assemblies>
-            <basePath>bin</basePath>
             <assembly>
               <name>$safeprojectname$.dll</name>
               <path>bin</path>

@@ -51,8 +51,9 @@
                 process for you. The packaging process creates an INSTALL and a SOURCE package in
                 the INSTALL folder within your desktopmodule/modulename folder. </li>
             <li>Installing your module in your development DotNetNuke instance is easy.Take the
-                SOURCE ZIP file that is created in the INSTALL folder, upload that using the Host/Extensions
-                page, Installation Wizard. </li>
+               <strong>INSTALL</strong> ZIP file that is created in the INSTALL folder, upload that using the Host/Extensions
+                page, Installation Wizard. Using the INSTALL ZIP file will overwrite the files already in this folder, 
+                but that shouldn't cause any problems as long as you install a recent build.</li>
             <li>After you've done a release for your module (typically deploying to an environment
                 outside of your development environment) you should change the Version number, you
                 need to do this in two places, the assemblyinfo file, and the .DNN manifest file.
