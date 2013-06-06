@@ -7,6 +7,11 @@ This VSIX extension package is an offshoot of the ChristocTemplates project,
 the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
+V2.3 - Release Date 6/5/2013
+Description: Fixed a problem with the businessControllerClass in the C# templates.
+Upgraded 
+
+
 V2.2 - Release Date 4/3/2013
 Description: Fixed Release Build location (wasn't going into the DNN root)
 Fixed copyright messages in the VB project.
@@ -36,4 +41,4 @@ Configured for DotNetNuke 6.2.2 but should work with all versions of DNN 6.0+
 Instructions For Use 
 To use these templates you can follow the instructions found in the DotNetNuke 
 Wiki on the following page
-http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx
+http://www.christoc.com/tutorials/aid/4

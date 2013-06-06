@@ -6,7 +6,7 @@
     <Description xml:space="preserve">This Visual Studio Package contains Project Templates to aid in your DotNetNuke Extension development.</Description>
     <MoreInfo>http://www.christoc.com/projects/moduledevelopmenttemplates</MoreInfo>
     <License>License.txt</License>
-    <GettingStartedGuide>http://www.dotnetnuke.com/Resources/Wiki/Page/Visual-Studio-2012-Templates.aspx</GettingStartedGuide>
+    <GettingStartedGuide>http://www.christoc.com/tutorials/aid/4</GettingStartedGuide>
     <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
     <Icon>Resources\Package.ico</Icon>
     <PreviewImage>Resources\Package.ico</PreviewImage>
