@@ -7,8 +7,9 @@ This VSIX extension package is an offshoot of the ChristocTemplates project,
 the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
-V2.3 - Release Date 6/11/2013
+V2.3 - Release Date 6/10/2013
 Description: Upgraded to MSBuildTasks V1.4.0.61
+
 
 V2.3 - Release Date 6/5/2013
 Description: Fixed a problem with the businessControllerClass in the C# templates.
