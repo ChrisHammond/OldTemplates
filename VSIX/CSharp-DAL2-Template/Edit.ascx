@@ -27,7 +27,7 @@
 <asp:LinkButton ID="btnCancel" runat="server"
     OnClick="btnCancel_Click" resourcekey="btnCancel" CssClass="dnnSecondaryAction" />
 
-<script language="javascript" type="text/javascript">
+<script type="text/javascript">
     /*globals jQuery, window, Sys */
     (function ($, Sys) {
         function dnnEditBasicSettings() {
