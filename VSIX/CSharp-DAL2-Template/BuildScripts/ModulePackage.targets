@@ -23,7 +23,7 @@
       <InstallInclude Include="**\*.resx" Exclude="packages\**" />
       <InstallInclude Include="**\*.aspx" Exclude="packages\**" />
       <InstallInclude Include="**\*.js" Exclude="packages\**" />
-      <InstallInclude Include="**\*.txt"  Exclude="**\obj\**;**\_ReSharper*\**;packages\**;" />
+      <InstallInclude Include="**\*.txt"  Exclude="**\obj\**;**\_ReSharper*\**;packages\**;**\.git\**;" />
       <InstallInclude Include="**\images\**" Exclude="packages\**" />
       
     </ItemGroup>
@@ -36,10 +36,10 @@
       <SourceInclude Include="**\*.html" />
       <SourceInclude Include="**\*.htm" />
       <SourceInclude Include="**\*.resx" />
-      <SourceInclude Include="**\*.xml" Exclude="**\obj\**;**\_ReSharper*\**;" />
+      <SourceInclude Include="**\*.xml" Exclude="**\obj\**;**\_ReSharper*\**;**\.git\**;" />
       <SourceInclude Include="**\*.aspx" />
       <SourceInclude Include="**\*.js" />
-      <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;" />
+      <SourceInclude Include="**\*.txt" Exclude="**\obj\**;**\_ReSharper*\**;**\.git\**;" />
       <SourceInclude Include="**\images\**" />
       <SourceInclude Include="**\*.cs" />
 	  <SourceInclude Include="**\Packages\**" />
