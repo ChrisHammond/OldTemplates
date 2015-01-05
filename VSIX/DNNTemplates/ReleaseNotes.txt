@@ -7,7 +7,7 @@ This VSIX extension package is an offshoot of the ChristocTemplates project,
 the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
-V4.0 - Release Date TBD
+V4.0 - Release Date 1/4/2015
 Description: Upgraded to MSBuildTasks V1.4.0.88
 	Added a new Theme (skin) template
 	Updates to copyright year
