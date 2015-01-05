@@ -161,7 +161,7 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="packages.config" />
-    <Content Include="packages\MSBuildTasks.1.4.0.74.nupkg">
+    <Content Include="packages\MSBuildTasks.1.4.0.88.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

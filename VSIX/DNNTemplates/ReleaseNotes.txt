@@ -8,9 +8,9 @@ the source code for these templates, as well as older templates are
 available there. http://christoctemplate.codeplex.com
 
 V4.0 - Release Date TBD
-Description: Upgraded to MSBuildTasks V1.4.0.74
+Description: Upgraded to MSBuildTasks V1.4.0.88
 	Added a new Theme (skin) template
-	Updates for VS2013 update 2
+	Updates to copyright year
 
 V3.0 - Release Date 6/18/2014
 Description: Upgraded to MSBuildTasks V1.4.0.74
