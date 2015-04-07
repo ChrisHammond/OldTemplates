@@ -70,6 +70,7 @@
     <None Include="Home.ascx.cs">
       <DependentUpon>Home.ascx</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="PopupSkin.ascx.cs">
       <DependentUpon>PopupSkin.ascx</DependentUpon>
     </None>
