@@ -64,9 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="css\bootstrap-theme.css.map" />
+    <None Include="css\bootstrap.css.map" />
     <None Include="Edit.ascx.cs">
       <DependentUpon>Edit.ascx</DependentUpon>
     </None>
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Home.ascx.cs">
       <DependentUpon>Home.ascx</DependentUpon>
     </None>
