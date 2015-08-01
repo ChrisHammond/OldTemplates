@@ -79,6 +79,7 @@
       <Folder Name="js" TargetFolderName="js">
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-image-gallery.min.js">bootstrap-image-gallery.min.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js">bootstrap.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="npm.js">bootstrap.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js">bootstrap.min.js</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="jquery.blueimp-gallery.min.js">jquery.blueimp-gallery.min.js</ProjectItem>
       </Folder>
